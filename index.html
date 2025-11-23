@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mistrz Prania | Lider Prania Tapicerki Warszawa</title>
+    <meta name="description" content="Profesjonalne pranie tapicerki meblowej w Warszawie. Zamów online i zyskaj 10% rabatu. Dojazd gratis.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); }
+        .section-header::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #FBBF24;
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+        html { scroll-behavior: smooth; }
+        
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] summary ~ * { animation: sweep .5s ease-in-out; }
+        @keyframes sweep {
+            0%    {opacity: 0; transform: translateY(-10px)}
+            100%  {opacity: 1; transform: translateY(0)}
+        }
+    </style>
+</head>
+<body class="text-gray-700 bg-white antialiased">
+
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all">
+        <div class="container mx-auto px-4 md:px-8 h-20 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="bg-blue-600 text-white p-2 rounded-lg group-hover:bg-blue-700 transition">
+                    <i class="fa-solid fa-soap text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-extrabold text-slate-800 tracking-tight leading-none">MISTRZ<span class="text-blue-600">PRANIA</span></h1>
+                    <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Warszawa</p>
+                </div>
+            </a>
+            
+            <nav class="hidden lg:flex gap-8 font-medium text-sm text-slate-600">
+                <a href="#uslugi" class="hover:text-blue-600 py-2">Usługi</a>
+                <a href="#realizacje" class="hover:text-blue-600 py-2">Realizacje</a>
+                <a href="#cennik" class="hover:text-blue-600 py-2">Cennik</a>
+                <a href="#o-nas" class="hover:text-blue-600 py-2">O nas</a>
+                <a href="#kontakt" class="hover:text-blue-600 py-2">Kontakt</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-6">
+                <div class="text-right hidden xl:block">
+                    <p class="text-xs text-gray-400 font-semibold">Infolinia czynna 8:00 - 20:00</p>
+                    <a href="tel:500000000" class="text-lg font-bold text-slate-800 hover:text-blue-600 transition">500 000 000</a>
+                </div>
+                <a href="#kontakt" class="bg-yellow-400 hover:bg-yellow-500 text-slate-900 font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 text-sm">
+                    Zamów Pranie
+                </a>
+            </div>
+             <button class="lg:hidden text-2xl text-slate-700"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="hero-bg pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden relative">
+        <div class="container mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2 relative z-10 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm text-blue-600 text-xs font-bold uppercase tracking-wide mb-6 border border-blue-100">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> Wolne terminy na ten tydzień
+                </div>
+                <h2 class="text-4xl lg:text-6xl font-extrabold text-slate-900 leading-[1.1] mb-6">
+                    Profesjonalne pranie <br>
+                    <span class="text-blue-600">tapicerki i wykładzin</span> <br>
+                    Warszawa i okolice
+                </h2>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0">
+                    Usuwamy 99% plam, roztoczy i bakterii. Zamów przez stronę i zyskaj <strong class="text-green-600">10% rabatu</strong> na pierwszą usługę.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#cennik" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl shadow-blue-200 shadow-xl transition text-center">
+                        Sprawdź Cennik
+                    </a>
+                    <a href="tel:500000000" class="bg-white border border-slate-200 hover:border-blue-400 text-slate-700 hover:text-blue-600 font-bold py-4 px-8 rounded-xl transition text-center flex items-center justify-center gap-2 shadow-sm">
+                        <i class="fa-solid fa-phone"></i> Zadzwoń teraz
+                    </a>
+                </div>
+                <div class="mt-10 flex items-center justify-center lg:justify-start gap-4">
+                    <div class="flex -space-x-2">
+                        <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Klient">
+                        <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Klient">
+                        <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/86.jpg" alt="Klient">
+                        <div class="w-10 h-10 rounded-full border-2 border-white bg-gray-100 flex items-center justify-center text-xs font-bold text-gray-600">+1k</div>
+                    </div>
+                    <div class="text-sm font-medium text-slate-500">
+                        Zadowolonych klientów <br>
+                        <span class="text-yellow-500"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> 4.9/5
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2 relative">
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-100/50 rounded-full blur-3xl -z-10"></div>
+                <img src="https://images.unsplash.com/photo-1632829882891-5047ccc4d1f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Ekipa piorąca" class="rounded-3xl shadow-2xl rotate-1 hover:rotate-0 transition duration-500 border-4 border-white">
+                <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg border-l-4 border-yellow-400 hidden md:block">
+                    <p class="font-bold text-slate-800 text-lg">Dojazd GRATIS</p>
+                    <p class="text-xs text-slate-500">Na terenie całej Warszawy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="uslugi" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h3 class="text-3xl font-bold text-slate-900 section-header">Zobacz nasze usługi</h3>
+                <p class="text-slate-500 mt-4">Specjalizujemy się w kompleksowym czyszczeniu tekstyliów domowych i biurowych.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition border border-gray-100">
+                    <div class="h-48 rounded-xl overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <h4 class="font-bold text-xl text-slate-800 mb-2">Pranie Mebli</h4>
+                    <p class="text-sm text-slate-500 mb-4">Kanapy, narożniki, sofy. Usuwanie plam i odświeżanie koloru.</p>
+                    <a href="#cennik" class="text-blue-600 font-semibold text-sm hover:underline">Zobacz ceny &rarr;</a>
+                </div>
+                 <div class="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition border border-gray-100">
+                    <div class="h-48 rounded-xl overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1558317374-a309d915a763?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <h4 class="font-bold text-xl text-slate-800 mb-2">Pranie Wykładzin</h4>
+                    <p class="text-sm text-slate-500 mb-4">Wykładziny biurowe i domowe dywany. Szybkie schnięcie.</p>
+                    <a href="#cennik" class="text-blue-600 font-semibold text-sm hover:underline">Zobacz ceny &rarr;</a>
+                </div>
+                 <div class="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition border border-gray-100">
+                    <div class="h-48 rounded-xl overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1616627547584-bf28cee262db?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <h4 class="font-bold text-xl text-slate-800 mb-2">Pranie Materacy</h4>
+                    <p class="text-sm text-slate-500 mb-4">Usuwanie roztoczy, naskórka i żółtych plam potu.</p>
+                    <a href="#cennik" class="text-blue-600 font-semibold text-sm hover:underline">Zobacz ceny &rarr;</a>
+                </div>
+                 <div class="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition border border-gray-100">
+                    <div class="h-48 rounded-xl overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <h4 class="font-bold text-xl text-slate-800 mb-2">Tapicerka Auto</h4>
+                    <p class="text-sm text-slate-500 mb-4">Pranie foteli samochodowych z dojazdem pod dom.</p>
+                    <a href="#cennik" class="text-blue-600 font-semibold text-sm hover:underline">Zobacz ceny &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-blue-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-slate-900 section-header">Jak wygląda proces prania tapicerki?</h3>
+                <p class="text-slate-600 mt-4">Stosujemy sprawdzoną, 6-etapową metodę ekstrakcyjną.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12 items-start">
+                
+                <div class="lg:w-2/3 space-y-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-white text-blue-600 border-2 border-blue-100 flex items-center justify-center text-xl font-bold shadow-sm">1</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-800">Identyfikacja i dobór środków</h4>
+                            <p class="text-slate-600 mt-2 text-sm leading-relaxed">
+                                Każde zlecenie zaczynamy od analizy. Pracownik ocenia rodzaj materiału i stopień zabrudzenia, aby dobrać najskuteczniejszą, a zarazem bezpieczną dla tkaniny chemię (np. do wełny, wiskozy czy poliestru).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-white text-blue-600 border-2 border-blue-100 flex items-center justify-center text-xl font-bold shadow-sm">2</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-800">Przygotowanie powierzchni</h4>
+                            <p class="text-slate-600 mt-2 text-sm leading-relaxed">
+                                Przed praniem właściwym usuwamy "na sucho" luźne zabrudzenia, takie jak kurz, piasek czy sierść zwierząt. Jeśli występują trudne plamy, stosujemy punktowo dedykowane odplamiacze.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-white text-blue-600 border-2 border-blue-100 flex items-center justify-center text-xl font-bold shadow-sm">3</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-800">Pre-spray (Rozpuszczanie brudu)</h4>
+                            <p class="text-slate-600 mt-2 text-sm leading-relaxed">
+                                Nakładamy specjalny preparat enzymatyczny (pre-spray), który wnika w głąb włókien. Działa on jak środek zmiękczający, oddzielając brud, tłuszcze i oleje od tkaniny.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl font-bold shadow-lg ring-4 ring-blue-100">4</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-800">Ekstrakcja (Pranie zasadnicze)</h4>
+                            <p class="text-slate-600 mt-2 text-sm leading-relaxed">
+                                Po około 10-15 minutach przystępujemy do prania. Maszyna pod wysokim ciśnieniem wtryskuje gorącą wodę z detergentem i natychmiast ją odsysa, wyciągając rozpuszczony brud z wnętrza mebla.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-white text-blue-600 border-2 border-blue-100 flex items-center justify-center text-xl font-bold shadow-sm">5</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-800">Płukanie (Neutralizacja)</h4>
+                            <p class="text-slate-600 mt-2 text-sm leading-relaxed">
+                                Bardzo ważny etap. Dokładnie wypłukujemy resztki detergentu czystą wodą z dodatkiem płukanki. Dzięki temu materiał jest miękki, nie lepi się i szybciej schnie, a pH tkaniny wraca do normy.
+                            </p>
+                        </div>
+                    </div>
+                     <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-white text-blue-600 border-2 border-blue-100 flex items-center justify-center text-xl font-bold shadow-sm">6</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-800">Suszenie</h4>
+                            <p class="text-slate-600 mt-2 text-sm leading-relaxed">
+                                Aby skrócić czas oczekiwania, używamy profesjonalnych wentylatorów szwedzkich. Znacznie przyspiesza to odparowanie wilgoci, dzięki czemu meble są gotowe do użytku szybciej.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/3 sticky top-24">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                        <div class="relative rounded-xl overflow-hidden shadow-sm mb-6">
+                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Pranie ekstrakcyjne" class="w-full h-auto object-cover">
+                        </div>
+                        <h5 class="font-bold text-lg text-slate-800 mb-2">Dlaczego metoda ekstrakcyjna?</h5>
+                        <ul class="space-y-2 text-sm text-slate-600">
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Usuwa 99% roztoczy</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Nie przemacza gąbki</li>
+                            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Bezpieczna dla alergików</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="realizacje" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-8 text-center">
+            <h3 class="text-3xl font-bold text-slate-900 section-header mb-12">Nasze Realizacje</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-4 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="relative h-64 w-full mb-4 rounded-xl overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://placehold.co/400x300/e2e8f0/64748b?text=Po');"></div>
+                        <div class="absolute inset-0 w-1/2 bg-cover bg-center border-r-2 border-white" style="background-image: url('https://placehold.co/400x300/94a3b8/1e293b?text=Przed');"></div>
+                    </div>
+                    <p class="font-semibold text-slate-700">Wypoczynek po remoncie</p>
+                </div>
+                 <div class="bg-gray-50 p-4 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="relative h-64 w-full mb-4 rounded-xl overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://placehold.co/400x300/e2e8f0/64748b?text=Po');"></div>
+                        <div class="absolute inset-0 w-1/2 bg-cover bg-center border-r-2 border-white" style="background-image: url('https://placehold.co/400x300/94a3b8/1e293b?text=Przed');"></div>
+                    </div>
+                    <p class="font-semibold text-slate-700">Usunięcie plam z wina</p>
+                </div>
+                 <div class="bg-gray-50 p-4 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="relative h-64 w-full mb-4 rounded-xl overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://placehold.co/400x300/e2e8f0/64748b?text=Po');"></div>
+                        <div class="absolute inset-0 w-1/2 bg-cover bg-center border-r-2 border-white" style="background-image: url('https://placehold.co/400x300/94a3b8/1e293b?text=Przed');"></div>
+                    </div>
+                    <p class="font-semibold text-slate-700">Odświeżenie foteli</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cennik" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-slate-900 section-header">Cennik Usług</h3>
+                <p class="text-slate-500 mt-4">Zamów przez stronę i odbierz 10% rabatu na każdą usługę.</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6 mb-16">
+                
+                <div class="bg-white rounded-2xl p-6 text-center shadow-md hover:shadow-xl transition group flex flex-col justify-between">
+                    <div>
+                        <div class="mb-4 text-blue-300 group-hover:text-blue-600 transition"><i class="fa-solid fa-couch text-5xl"></i></div>
+                        <h4 class="font-bold text-lg text-slate-800">Sofa / Kanapa</h4>
+                        <p class="text-xs text-gray-500 mb-4">2-3 osobowa</p>
+                        <div class="text-gray-400 text-sm line-through">140 zł</div>
+                        <div class="text-3xl font-extrabold text-slate-800">140 zł</div>
+                    </div>
+                    <a href="#kontakt" class="mt-6 block bg-green-500 hover:bg-green-600 text-white rounded-lg py-3 px-4 transition shadow-lg hover:shadow-green-200 transform hover:-translate-y-1">
+                        <div class="text-xs uppercase font-bold opacity-90">Zamów online za:</div>
+                        <div class="text-xl font-bold">126 zł</div>
+                        <div class="text-[10px] bg-green-700 inline-block px-2 rounded-full mt-1">Oszczędzasz 14 zł</div>
+                    </a>
+                </div>
+
+                 <div class="bg-white rounded-2xl p-6 text-center shadow-md hover:shadow-xl transition relative overflow-hidden group flex flex-col justify-between">
+                     <div class="absolute top-0 right-0 bg-yellow-400 text-xs font-bold px-3 py-1 rounded-bl-lg">TOP</div>
+                    <div>
+                        <div class="mb-4 text-blue-300 group-hover:text-blue-600 transition"><i class="fa-solid fa-couch text-5xl"></i></div>
+                        <h4 class="font-bold text-lg text-slate-800">Narożnik L</h4>
+                        <p class="text-xs text-gray-500 mb-4">Kształt litery L</p>
+                         <div class="text-gray-400 text-sm line-through">190 zł</div>
+                        <div class="text-3xl font-extrabold text-slate-800">190 zł</div>
+                    </div>
+                    <a href="#kontakt" class="mt-6 block bg-green-500 hover:bg-green-600 text-white rounded-lg py-3 px-4 transition shadow-lg hover:shadow-green-200 transform hover:-translate-y-1">
+                        <div class="text-xs uppercase font-bold opacity-90">Zamów online za:</div>
+                        <div class="text-xl font-bold">171 zł</div>
+                        <div class="text-[10px] bg-green-700 inline-block px-2 rounded-full mt-1">Oszczędzasz 19 zł</div>
+                    </a>
+                </div>
+
+                 <div class="bg-white rounded-2xl p-6 text-center shadow-md hover:shadow-xl transition group flex flex-col justify-between">
+                    <div>
+                        <div class="mb-4 text-blue-300 group-hover:text-blue-600 transition"><i class="fa-solid fa-chair text-5xl"></i></div>
+                        <h4 class="font-bold text-lg text-slate-800">Krzesło / Fotel</h4>
+                        <p class="text-xs text-gray-500 mb-4">Tapicerowane</p>
+                        <div class="text-gray-400 text-sm line-through">20 zł</div>
+                        <div class="text-3xl font-extrabold text-slate-800">20 zł</div>
+                    </div>
+                    <a href="#kontakt" class="mt-6 block bg-green-500 hover:bg-green-600 text-white rounded-lg py-3 px-4 transition shadow-lg hover:shadow-green-200 transform hover:-translate-y-1">
+                        <div class="text-xs uppercase font-bold opacity-90">Zamów online za:</div>
+                        <div class="text-xl font-bold">18 zł</div>
+                        <div class="text-[10px] bg-green-700 inline-block px-2 rounded-full mt-1">Tylko online</div>
+                    </a>
+                </div>
+
+                 <div class="bg-white rounded-2xl p-6 text-center shadow-md hover:shadow-xl transition group flex flex-col justify-between">
+                    <div>
+                        <div class="mb-4 text-blue-300 group-hover:text-blue-600 transition"><i class="fa-solid fa-bed text-5xl"></i></div>
+                        <h4 class="font-bold text-lg text-slate-800">Materac</h4>
+                        <p class="text-xs text-gray-500 mb-4">160x200 (dwustronnie)</p>
+                        <div class="text-gray-400 text-sm line-through">150 zł</div>
+                        <div class="text-3xl font-extrabold text-slate-800">150 zł</div>
+                    </div>
+                     <a href="#kontakt" class="mt-6 block bg-green-500 hover:bg-green-600 text-white rounded-lg py-3 px-4 transition shadow-lg hover:shadow-green-200 transform hover:-translate-y-1">
+                        <div class="text-xs uppercase font-bold opacity-90">Zamów online za:</div>
+                        <div class="text-xl font-bold">135 zł</div>
+                        <div class="text-[10px] bg-green-700 inline-block px-2 rounded-full mt-1">Oszczędzasz 15 zł</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl p-8 md:p-10 shadow-lg border-2 border-yellow-400 relative overflow-hidden">
+                <div class="absolute -right-10 -top-10 w-40 h-40 bg-yellow-100 rounded-full blur-3xl opacity-50"></div>
+                
+                <h3 class="text-2xl font-bold text-slate-900 mb-8 text-center flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-tags text-red-500"></i> Dodatkowe Promocje
+                </h3>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-gradient-to-br from-red-50 to-white p-6 rounded-xl border border-red-100 text-center relative hover:-translate-y-1 transition">
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Super Oferta</div>
+                        <h4 class="font-bold text-slate-800 text-lg mb-2">Drugi mebel taniej</h4>
+                        <p class="text-sm text-slate-600 mb-4">Przy zamówieniu prania narożnika, pranie fotela lub krzeseł z rabatem.</p>
+                        <div class="text-3xl font-extrabold text-red-500">-50%</div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl border border-blue-100 text-center relative hover:-translate-y-1 transition">
+                        <h4 class="font-bold text-slate-800 text-lg mb-2">Impregnacja Gratis</h4>
+                        <p class="text-sm text-slate-600 mb-4">Dla zamówień powyżej 400 zł impregnacja wszystkich pranych mebli gratis.</p>
+                        <div class="text-3xl font-extrabold text-blue-600">0 zł</div>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-yellow-50 to-white p-6 rounded-xl border border-yellow-100 text-center relative hover:-translate-y-1 transition">
+                        <h4 class="font-bold text-slate-800 text-lg mb-2">Zniżka dla sąsiada</h4>
+                        <p class="text-sm text-slate-600 mb-4">Umów się z sąsiadem na ten sam termin. Oboje dostaniecie rabat na całość.</p>
+                        <div class="text-3xl font-extrabold text-yellow-500">-10%</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="py-20 bg-white overflow-hidden">
+        <div class="container mx-auto px-4 md:px-8">
+            <h3 class="text-3xl font-bold text-center text-slate-900 section-header mb-16">Dlaczego warto?</h3>
+            <div class="relative flex flex-col lg:flex-row items-center justify-center">
+                <div class="lg:w-1/2 relative z-10 mb-10 lg:mb-0">
+                    <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Czysta Sofa" class="w-full drop-shadow-2xl rounded-2xl">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:absolute inset-0 w-full h-full pointer-events-none gap-4 lg:gap-0">
+                    <div class="bg-white p-4 rounded-xl shadow-lg border-l-4 border-blue-500 lg:absolute lg:top-10 lg:left-10 lg:max-w-xs pointer-events-auto">
+                        <h5 class="font-bold text-slate-800"><i class="fa-solid fa-bacterin text-blue-500 mr-2"></i>Usuwanie Roztoczy</h5>
+                        <p class="text-sm text-slate-600 mt-1">Eliminujemy alergeny i roztocza kurzu domowego.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-lg border-l-4 border-green-500 lg:absolute lg:bottom-20 lg:left-20 lg:max-w-xs pointer-events-auto">
+                        <h5 class="font-bold text-slate-800"><i class="fa-solid fa-leaf text-green-500 mr-2"></i>Bezpieczna Chemia</h5>
+                        <p class="text-sm text-slate-600 mt-1">Używamy środków Chemspec/Karcher bezpiecznych dla dzieci.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-lg border-l-4 border-yellow-400 lg:absolute lg:top-10 lg:right-10 lg:max-w-xs pointer-events-auto text-left lg:text-right">
+                        <h5 class="font-bold text-slate-800">Usuwanie Plam <i class="fa-solid fa-wand-magic-sparkles text-yellow-400 ml-2"></i></h5>
+                        <p class="text-sm text-slate-600 mt-1">Wino, kawa, czekolada? Dla nas to żaden problem.</p>
+                    </div>
+                     <div class="bg-white p-4 rounded-xl shadow-lg border-l-4 border-purple-500 lg:absolute lg:bottom-20 lg:right-20 lg:max-w-xs pointer-events-auto text-left lg:text-right">
+                        <h5 class="font-bold text-slate-800">Neutralizacja zapachów <i class="fa-solid fa-wind text-purple-500 ml-2"></i></h5>
+                        <p class="text-sm text-slate-600 mt-1">Pozbywamy się nieprzyjemnych zapachów uryny czy dymu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="o-nas" class="py-20 bg-blue-900 text-white relative">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2 space-y-6">
+                    <div class="inline-block bg-blue-800 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2">O Firmie</div>
+                    <h3 class="text-3xl lg:text-4xl font-bold leading-tight">Lokalna firma, <br> światowa jakość</h3>
+                    <p class="text-blue-100 text-lg leading-relaxed">
+                        Jesteśmy z Warszawy. Nie jesteśmy pośrednikiem. Dzwoniąc do nas, rozmawiasz bezpośrednio z wykonawcą.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-blue-700 rounded-lg flex items-center justify-center flex-shrink-0 text-xl"><i class="fa-solid fa-user-shield"></i></div>
+                            <div>
+                                <h5 class="font-bold text-lg">Ubezpieczenie OC</h5>
+                                <p class="text-sm text-blue-200">Usługa w pełni ubezpieczona.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                     <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Nasz Zespół" class="rounded-2xl shadow-2xl border-4 border-blue-800 relative z-10 w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col lg:flex-row">
+                
+                <div class="lg:w-5/12 bg-blue-600 p-10 text-white flex flex-col justify-between relative">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-bl-full"></div>
+                    <div>
+                        <h3 class="text-3xl font-bold mb-4">Zamów pranie <br>ze zniżką -10%</h3>
+                        <p class="text-blue-100 mb-8">Wypełnij formularz. Oddzwonimy do Ciebie w ciągu 15-30 minut, potwierdzimy termin i naliczymy rabat.</p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <p class="text-xs text-blue-200">Zadzwoń teraz</p>
+                                    <p class="font-bold text-lg">500 000 000</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <p class="text-xs text-blue-200">Napisz do nas</p>
+                                    <p class="font-bold">biuro@mistrzprania.pl</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10 lg:mt-0">
+                        <div class="flex items-center gap-2 text-sm">
+                            <i class="fa-solid fa-circle-check text-yellow-400"></i> Odpowiadamy błyskawicznie
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-7/12 p-10">
+                    <form onsubmit="alert('Dziękujemy za wiadomość! Rabat -10% został naliczony. Oddzwonimy wkrótce.'); return false;" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Imię i Nazwisko</label>
+                                <input type="text" placeholder="Jan Kowalski" required class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 outline-none transition">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Numer telefonu</label>
+                                <input type="tel" placeholder="np. 500 123 456" required class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 outline-none transition">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Co mamy wyprać?</label>
+                            <select class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 outline-none transition">
+                                <option>Wybierz usługę...</option>
+                                <option>Kanapa / Narożnik</option>
+                                <option>Fotele / Krzesła</option>
+                                <option>Wykładzina / Dywan</option>
+                                <option>Materac</option>
+                                <option>Tapicerka Samochodowa</option>
+                                <option>Inne / Wycena indywidualna</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Dodatkowe informacje (dzielnica, piętro)</label>
+                            <textarea rows="3" placeholder="np. Warszawa Mokotów, plama po winie na siedzisku..." class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 outline-none transition"></textarea>
+                        </div>
+
+                        <div class="flex items-center gap-4 pt-2">
+                            <button type="submit" class="bg-yellow-400 hover:bg-yellow-500 text-slate-900 font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 w-full md:w-auto">
+                                Wyślij i odbierz -10%
+                            </button>
+                            <p class="text-xs text-gray-400 hidden sm:block">Twoje dane są bezpieczne (RODO).</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-8 max-w-4xl">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-slate-900 section-header">Najczęściej zadawane pytania</h3>
+            </div>
+            <div class="space-y-4">
+                <details class="group bg-gray-50 rounded-lg p-4 cursor-pointer open:ring-1 open:ring-blue-200">
+                    <summary class="font-bold text-slate-800 flex justify-between items-center">
+                        Ile schnie kanapa po praniu?
+                        <span class="text-blue-600 transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="mt-4 text-slate-600 text-sm leading-relaxed border-t border-gray-200 pt-4">
+                        Standardowy czas schnięcia to od 6 do 12 godzin.
+                    </div>
+                </details>
+                <details class="group bg-gray-50 rounded-lg p-4 cursor-pointer open:ring-1 open:ring-blue-200">
+                    <summary class="font-bold text-slate-800 flex justify-between items-center">
+                        Czy dojazd w Warszawie jest płatny?
+                        <span class="text-blue-600 transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="mt-4 text-slate-600 text-sm leading-relaxed border-t border-gray-200 pt-4">
+                        Na terenie Warszawy dojazd jest GRATIS przy zamówieniu powyżej 150 zł.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold text-xl mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-soap text-blue-500"></i> MistrzPrania
+                    </h4>
+                    <p class="text-sm leading-relaxed mb-4">
+                        Profesjonalne usługi czyszczące w Warszawie.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-8 h-8 bg-slate-800 rounded flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-8 h-8 bg-slate-800 rounded flex items-center justify-center hover:bg-pink-600 hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Menu</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Strona Główna</a></li>
+                        <li><a href="#uslugi" class="hover:text-white transition">Usługi</a></li>
+                        <li><a href="#cennik" class="hover:text-white transition">Cennik</a></li>
+                        <li><a href="#kontakt" class="hover:text-white transition">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Usługi</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Pranie Narożników</a></li>
+                        <li><a href="#" class="hover:text-white transition">Czyszczenie Dywanów</a></li>
+                        <li><a href="#" class="hover:text-white transition">Pranie Materacy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Kontakt</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-blue-500"></i> <span class="font-bold text-white">500 000 000</span></li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-blue-500"></i> biuro@mistrzprania.pl</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center text-xs">
+                <p>&copy; 2025 Mistrz Prania. Realizacja: Twój Partner AI.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
