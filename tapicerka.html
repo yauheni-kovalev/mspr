@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranie Tapicerki Meblowej Warszawa | Mistrz Prania</title>
+    <meta name="description" content="Profesjonalne pranie kanap, narożników i foteli w Warszawie. Usuwamy plamy i roztocza. Dojazd gratis. Sprawdź cennik!">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); }
+        .section-header::after { content: ''; display: block; width: 60px; height: 4px; background: #FBBF24; margin: 15px auto 0; border-radius: 2px; }
+        html { scroll-behavior: smooth; }
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] summary ~ * { animation: sweep .5s ease-in-out; }
+        @keyframes sweep { 0% {opacity: 0; transform: translateY(-10px)} 100% {opacity: 1; transform: translateY(0)} }
+    </style>
+</head>
+<body class="text-gray-700 bg-white antialiased">
+
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all">
+        <div class="container mx-auto px-4 md:px-8 h-20 flex justify-between items-center relative">
+            
+            <a href="index.html" class="flex items-center gap-2 group z-50">
+                <div class="bg-blue-600 text-white p-2 rounded-lg group-hover:bg-blue-700 transition">
+                    <i class="fa-solid fa-soap text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-extrabold text-slate-800 tracking-tight leading-none">MISTRZ<span class="text-blue-600">PRANIA</span></h1>
+                    <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Warszawa i okolice</p>
+                </div>
+            </a>
+            
+            <nav class="hidden lg:flex gap-8 font-medium text-sm text-slate-600 items-center">
+                <a href="index.html" class="hover:text-blue-600 py-2">Strona Główna</a>
+                
+                <div class="relative group">
+                    <button class="flex items-center gap-1 hover:text-blue-600 py-2 focus:outline-none group-hover:text-blue-600 transition">
+                        Usługi <i class="fa-solid fa-chevron-down text-xs transition group-hover:rotate-180"></i>
+                    </button>
+                    <div class="absolute top-full left-0 w-60 bg-white shadow-xl rounded-xl border border-gray-100 hidden group-hover:block pt-2 animate-fade-in">
+                        <div class="flex flex-col overflow-hidden rounded-xl">
+                            <a href="tapicerka.html" class="px-4 py-3 hover:bg-blue-50 hover:text-blue-600 transition border-b border-gray-50 flex items-center gap-3">
+                                <i class="fa-solid fa-couch text-blue-400"></i> Tapicerka Meblowa
+                            </a>
+                            <a href="materace.html" class="px-4 py-3 hover:bg-blue-50 hover:text-blue-600 transition border-b border-gray-50 flex items-center gap-3">
+                                <i class="fa-solid fa-bed text-blue-400"></i> Pranie Materacy
+                            </a>
+                            <a href="dywany.html" class="px-4 py-3 hover:bg-blue-50 hover:text-blue-600 transition border-b border-gray-50 flex items-center gap-3">
+                                <i class="fa-solid fa-rug text-blue-400"></i> Pranie Dywanów
+                            </a>
+                            <a href="wykladziny.html" class="px-4 py-3 hover:bg-blue-50 hover:text-blue-600 transition flex items-center gap-3">
+                                <i class="fa-solid fa-layer-group text-blue-400"></i> Pranie Wykładzin
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="realizacje.html" class="hover:text-blue-600 py-2">Realizacje</a>
+                <a href="cennik.html" class="hover:text-blue-600 py-2">Cennik</a>
+                <a href="kontakt.html" class="hover:text-blue-600 py-2">Kontakt</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-6">
+                <div class="text-right hidden xl:block">
+                    <p class="text-xs text-gray-400 font-semibold">Infolinia czynna 8:00 - 20:00</p>
+                    <a href="tel:500000000" class="text-lg font-bold text-slate-800 hover:text-blue-600 transition">500 000 000</a>
+                </div>
+                <a href="tel:500000000" class="bg-yellow-400 hover:bg-yellow-500 text-slate-900 font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 text-sm">
+                    Zadzwoń teraz
+                </a>
+            </div>
+
+            <button id="mobile-menu-btn" class="lg:hidden text-2xl text-slate-700 focus:outline-none z-50 p-2">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="fixed inset-0 bg-white z-40 transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden pt-24 px-6 flex flex-col h-screen overflow-y-auto">
+            <nav class="flex flex-col gap-4 text-lg font-medium text-slate-800">
+                <a href="index.html" class="border-b border-gray-100 pb-4">Strona Główna</a>
+                
+                <div class="border-b border-gray-100 pb-2">
+                    <button id="mobile-services-toggle" class="flex items-center justify-between w-full py-2 focus:outline-none">
+                        <span>Usługi</span>
+                        <i id="mobile-arrow" class="fa-solid fa-chevron-down text-sm text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    
+                    <div id="mobile-services-list" class="hidden flex-col gap-2 pl-4 bg-gray-50 rounded-xl mt-2 py-2 mb-2">
+                        <a href="tapicerka.html" class="py-2 flex items-center gap-3 text-sm text-gray-600 hover:text-blue-600">
+                            <i class="fa-solid fa-couch text-blue-400"></i> Tapicerka Meblowa
+                        </a>
+                        <a href="materace.html" class="py-2 flex items-center gap-3 text-sm text-gray-600 hover:text-blue-600">
+                            <i class="fa-solid fa-bed text-blue-400"></i> Pranie Materacy
+                        </a>
+                        <a href="dywany.html" class="py-2 flex items-center gap-3 text-sm text-gray-600 hover:text-blue-600">
+                            <i class="fa-solid fa-rug text-blue-400"></i> Pranie Dywanów
+                        </a>
+                        <a href="wykladziny.html" class="py-2 flex items-center gap-3 text-sm text-gray-600 hover:text-blue-600">
+                            <i class="fa-solid fa-layer-group text-blue-400"></i> Pranie Wykładzin
+                        </a>
+                    </div>
+                </div>
+
+                <a href="realizacje.html" class="border-b border-gray-100 pb-4">Realizacje</a>
+                <a href="cennik.html" class="border-b border-gray-100 pb-4">Cennik</a>
+                <a href="kontakt.html" class="border-b border-gray-100 pb-4">Kontakt</a>
+                
+                <div class="mt-4 pb-10">
+                     <p class="text-xs text-gray-400 font-semibold mb-2">Szybki kontakt:</p>
+                     <a href="tel:500000000" class="flex items-center gap-3 text-xl font-bold text-slate-800 mb-4">
+                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-sm"><i class="fa-solid fa-phone"></i></div>
+                        500 000 000
+                     </a>
+                     <a href="tel:500000000" class="block w-full text-center bg-yellow-400 text-slate-900 font-bold py-4 rounded-xl shadow-lg">
+                        Zadzwoń teraz
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <script>
+            // Элементы основного меню
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const icon = menuBtn.querySelector('i');
+            let isMenuOpen = false;
+
+            // Элементы аккордеона услуг
+            const servicesToggle = document.getElementById('mobile-services-toggle');
+            const servicesList = document.getElementById('mobile-services-list');
+            const arrowIcon = document.getElementById('mobile-arrow');
+
+            // 1. Открытие/Закрытие основного меню
+            menuBtn.addEventListener('click', () => {
+                isMenuOpen = !isMenuOpen;
+                if (isMenuOpen) {
+                    mobileMenu.classList.remove('translate-x-full');
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark');
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    mobileMenu.classList.add('translate-x-full');
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+
+            // 2. Логика Аккордеона "Usługi"
+            servicesToggle.addEventListener('click', () => {
+                // Переключаем видимость списка
+                servicesList.classList.toggle('hidden');
+                servicesList.classList.toggle('flex');
+                
+                // Вращаем стрелку
+                arrowIcon.classList.toggle('rotate-180');
+            });
+        </script>
+    </header>
+
+    <section class="hero-bg pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden relative">
+        <div class="container mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2 relative z-10 text-center lg:text-left">
+                <h2 class="text-4xl lg:text-6xl font-extrabold text-slate-900 leading-[1.1] mb-6">
+                    Pranie tapicerki meblowej <br>
+                    <span class="text-blue-600">Warszawa i okolice</span>
+                </h2>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0">
+                    Przywracamy świeżość Twoim meblom. Usuwamy trudne plamy, sierść i roztocza metodą ekstrakcyjną. Twoja kanapa będzie jak nowa!
+                </p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+                    <div class="bg-white p-3 rounded-xl shadow-sm border border-blue-50 flex items-center gap-3">
+                        <i class="fa-solid fa-droplet text-blue-500 text-xl"></i>
+                        <span class="text-sm font-bold text-slate-700">Dojazd Gratis<br><span class="text-xs font-normal text-gray-500">Warszawa</span></span>
+                    </div>
+                    <div class="bg-white p-3 rounded-xl shadow-sm border border-blue-50 flex items-center gap-3">
+                        <i class="fa-solid fa-leaf text-green-500 text-xl"></i>
+                        <span class="text-sm font-bold text-slate-700">Eco Środki<br><span class="text-xs font-normal text-gray-500">Bezpieczne</span></span>
+                    </div>
+                    <div class="bg-white p-3 rounded-xl shadow-sm border border-blue-50 flex items-center gap-3">
+                        <i class="fa-solid fa-clock text-yellow-500 text-xl"></i>
+                        <span class="text-sm font-bold text-slate-700">Szybki Czas<br><span class="text-xs font-normal text-gray-500">Schnięcia</span></span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#cennik" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl shadow-blue-200 shadow-xl transition text-center">Sprawdź Cennik</a>
+                </div>
+            </div>
+            
+            <div class="lg:w-1/2 relative">
+                <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Pranie kanapy Warszawa" class="rounded-3xl shadow-2xl relative z-10 w-full border-4 border-white">
+            </div>
+        </div>
+    </section>
+
+    <section id="cennik" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-slate-900 section-header">Cennik prania mebli</h3>
+                <p class="text-slate-500 mt-4">Zamów online i odbierz 10% rabatu. Ceny brutto.</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-gray-100 hover:border-blue-300 transition group">
+                    <div class="mb-4 text-blue-500"><i class="fa-solid fa-couch text-4xl"></i></div>
+                    <h4 class="font-bold text-lg text-slate-800">Sofa 2-os</h4>
+                    <p class="text-xs text-gray-400 mb-4">Pranie dogłębne</p>
+                    <div class="text-gray-400 text-sm line-through">140 zł</div>
+                    <div class="text-3xl font-extrabold text-slate-800 mb-4">140 zł</div>
+                    <a href="#kontakt" class="block w-full bg-blue-50 hover:bg-blue-600 hover:text-white text-blue-600 font-bold py-2 rounded-lg transition text-sm">Zamów taniej online</a>
+                </div>
+                 <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-gray-100 hover:border-blue-300 transition group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-yellow-400 text-[10px] font-bold px-2 py-1">POPULARNE</div>
+                    <div class="mb-4 text-blue-500"><i class="fa-solid fa-couch text-4xl"></i></div>
+                    <h4 class="font-bold text-lg text-slate-800">Narożnik "L"</h4>
+                    <p class="text-xs text-gray-400 mb-4">Standardowy rozmiar</p>
+                    <div class="text-gray-400 text-sm line-through">190 zł</div>
+                    <div class="text-3xl font-extrabold text-slate-800 mb-4">190 zł</div>
+                    <a href="#kontakt" class="block w-full bg-blue-600 text-white font-bold py-2 rounded-lg transition text-sm shadow-md">Zamów taniej online</a>
+                </div>
+                 <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-gray-100 hover:border-blue-300 transition group">
+                    <div class="mb-4 text-blue-500"><i class="fa-solid fa-couch text-4xl"></i></div>
+                    <h4 class="font-bold text-lg text-slate-800">Narożnik "U"</h4>
+                    <p class="text-xs text-gray-400 mb-4">Duży narożnik</p>
+                    <div class="text-gray-400 text-sm line-through">250 zł</div>
+                    <div class="text-3xl font-extrabold text-slate-800 mb-4">250 zł</div>
+                    <a href="#kontakt" class="block w-full bg-blue-50 hover:bg-blue-600 hover:text-white text-blue-600 font-bold py-2 rounded-lg transition text-sm">Zamów taniej online</a>
+                </div>
+                 <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-gray-100 hover:border-blue-300 transition group">
+                    <div class="mb-4 text-blue-500"><i class="fa-solid fa-chair text-4xl"></i></div>
+                    <h4 class="font-bold text-lg text-slate-800">Fotel / Krzesło</h4>
+                    <p class="text-xs text-gray-400 mb-4">Tapicerowane</p>
+                    <div class="text-gray-400 text-sm line-through">60 zł</div>
+                    <div class="text-3xl font-extrabold text-slate-800 mb-4">60 zł</div>
+                    <a href="#kontakt" class="block w-full bg-blue-50 hover:bg-blue-600 hover:text-white text-blue-600 font-bold py-2 rounded-lg transition text-sm">Zamów taniej online</a>
+                </div>
+            </div>
+             <div class="text-center mt-10">
+                <a href="#kontakt" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-slate-900 font-bold py-3 px-8 rounded-full shadow-lg transition">Zamów wycenę indywidualną</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-blue-50">
+        <div class="container mx-auto px-4 md:px-8 flex flex-col lg:flex-row gap-12 items-center">
+            <div class="lg:w-1/2">
+                <h3 class="text-3xl font-bold text-slate-900 mb-6 section-header inline-block">Kilka słów o nas</h3>
+                <div class="space-y-6 mt-8">
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600"><i class="fa-solid fa-user-shield"></i></div>
+                        <div><h4 class="font-bold">Doświadczenie</h4><p class="text-sm text-slate-600">Pierzemy tapicerkę od lat. Znamy każdy rodzaj materiału.</p></div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600"><i class="fa-solid fa-pump-soap"></i></div>
+                        <div><h4 class="font-bold">Chemia Kärcher/Chemspec</h4><p class="text-sm text-slate-600">Tylko certyfikowane środki bezpieczne dla domowników.</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2">
+                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="rounded-2xl shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="bg-gray-50 rounded-3xl shadow-xl overflow-hidden flex flex-col lg:flex-row border border-gray-100">
+                <div class="lg:w-5/12 bg-blue-600 p-10 text-white flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-4">Zamów pranie mebli</h3>
+                        <p class="text-blue-100 mb-8">Wypełnij formularz. Oddzwonimy w 15 minut i naliczymy -10% rabatu.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-phone"></i> 500 000 000</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-envelope"></i> biuro@mistrzprania.pl</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-7/12 p-10">
+                    <form onsubmit="alert('Wiadomość wysłana!'); return false;" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <input type="text" placeholder="Imię i Nazwisko" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none">
+                            <input type="tel" placeholder="Telefon" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none">
+                        </div>
+                        <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 outline-none">
+                            <option>Wybierz usługę...</option>
+                            <option selected>Pranie Tapicerki Meblowej</option>
+                            <option>Inne</option>
+                        </select>
+                        <button type="submit" class="bg-yellow-400 hover:bg-yellow-500 text-slate-900 font-bold py-4 px-8 rounded-xl shadow-lg w-full">Wyślij i odbierz -10%</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="container mx-auto px-4 md:px-8 text-center">
+            <p>&copy; 2025 Mistrz Prania. Warszawa.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
